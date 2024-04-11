@@ -12,8 +12,7 @@ import static io.gatling.javaapi.http.HttpDsl.*;
 
 public class SSESimulation extends Simulation {
 
-    private HttpProtocolBuilder httpProtocol = http.baseUrl("http://localhost:8080")
-            .acceptHeader("application/json");
+    private HttpProtocolBuilder httpProtocol = http.baseUrl("http://localhost:8080");
     private ScenarioBuilder scn = scenario("SSE SERVER 부하 테스트")
             .exec(sse("Connect").connect("/sub"));
 
