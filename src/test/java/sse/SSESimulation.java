@@ -34,7 +34,6 @@ public class SSESimulation extends Simulation {
                 ).protocols(httpProtocol));
                  **/
 
-
                         scn.injectOpen(
                                 rampUsers(10000).during(Duration.ofSeconds(30))
                         )
